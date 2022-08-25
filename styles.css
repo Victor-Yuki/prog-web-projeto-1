@@ -36,8 +36,14 @@ header {
   justify-content: space-between;
 }
 
+.logo-md {
+  display: none;
+}
+
 .nav-items {
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .nav-items a {
   color: white;
@@ -96,10 +102,6 @@ header {
   width: 1rem;
   margin-right: 5px;
 }
-.arrow {
-  transform: rotate(180deg);
-  z-index: 0;
-}
 
 .contents {
   display: flex;
@@ -146,6 +148,12 @@ header {
 .wa-seguranca img {
   width: 300px;
 }
+.text-link {
+  color: #39b4ed;
+}
+.text-link:hover {
+  text-decoration: underline;
+}
 
 footer {
   background-color: #1c1e21;
@@ -170,4 +178,62 @@ footer {
   color: white;
   font-size: 0.95rem;
   font-weight: 700;
+}
+
+
+@media (min-width:770px) and (max-width: 1036px) {
+  .navbar {
+    width: 100%;
+  }
+  .logo-lg {
+    display: none;
+  }
+  .logo-md {
+    display: inline;
+  }
+  .nav-items {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .text-lang {
+    display: none;
+  }
+  .triangulo {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    padding: 30px 5%;
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  .container div {
+    width: 90%;
+  }
+  .title {
+    width: 100%;
+    display: block;
+  }
+  .content {
+    width: 80%;
+  }
+  .obs {
+    width: 80%;
+  }
+  .container img {
+    padding-top: 50px;
+    width: 40%;
+    align-self: flex-start;
+  }
+
+  .footer {
+    width: 100%;
+  }
 }
