@@ -24,6 +24,8 @@ nav {
 
 header {
   padding-top: 91px;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar {
@@ -62,7 +64,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 18.5%;
+  padding: 50px 24%;
+  width: 52%;
   line-height: 1.5;
 }
 .container div {
@@ -106,7 +109,7 @@ header {
 .contents {
   display: flex;
   align-items:flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   height: 100%;
   line-height: 1.5;
@@ -127,7 +130,7 @@ header {
   font-size: 1.1rem;
 }
 .flex-content {
-  flex: 0.49;
+  flex: 0.47;
   padding: 80px 0 0;
   display: flex;
   flex-direction: column;
@@ -141,12 +144,15 @@ header {
 .wa-business img {
   width: 300px;
 }
+.wa-business p:nth-of-type(2) {
+  margin-bottom: 100px;
+}
 .wa-seguranca {
   background-color: #e7f0e4;
   align-self: stretch;
 }
 .wa-seguranca img {
-  width: 300px;
+  width: 400px;
 }
 .text-link {
   color: #39b4ed;
@@ -205,8 +211,7 @@ footer {
 
   header {
     width: 100%;
-    display: flex;
-    justify-content: center;
+
   }
   .container {
     padding: 30px 5%;
