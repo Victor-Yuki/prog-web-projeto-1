@@ -20,6 +20,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 header {
@@ -42,22 +43,30 @@ header {
   display: none;
 }
 
+.menu {
+  display: none;
+}
+
 .nav-items {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  min-width: 75%;
 }
 .nav-items a {
   color: white;
-  margin: 0 15px;
+  margin-right: 37px;
 }
-
+#ultimo-item {
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+}
+#ultimo-item img, svg, span{
+  margin-left: 5px;
+}
 .globe-img {
   width: 15px;
-}
-.triangulo {
-  position: relative;
-  top: 5px;
 }
 
 .container {
@@ -94,16 +103,18 @@ header {
   display: block;
   margin-bottom: 1rem;
 }
+.link-icon {
+  width: 3.5%;
+  margin-right: 7px;
+}
+.link-arrow {
+  transform: rotate(180deg);
+}
 .link:hover span{
   text-decoration: underline;
 }
-.container img {
+.phone-img {
   width: 300px;
-}
-
-.link svg {
-  width: 1rem;
-  margin-right: 5px;
 }
 
 .contents {
@@ -187,7 +198,8 @@ footer {
 }
 
 
-@media (min-width:770px) and (max-width: 1036px) {
+
+@media (min-width:360px) and (max-width: 1036px) {
   .navbar {
     width: 100%;
   }
@@ -232,7 +244,7 @@ footer {
   .obs {
     width: 80%;
   }
-  .container img {
+  .phone-img {
     padding-top: 50px;
     width: 40%;
     align-self: flex-start;
@@ -241,4 +253,66 @@ footer {
   .footer {
     width: 100%;
   }
+}
+
+
+@media (max-width: 360px) {
+  .navbar {
+    width: 100%;
+  }
+  .logo-lg {
+    display: none;
+  }
+  .logo-md {
+    display: inline;
+  }
+  .menu {
+    display: block;
+  }
+  .menu img{
+    width: 30px;
+  }
+  .nav-items {
+    display: none;
+  }
+  header{
+    background-color: #128c7e;
+  }
+  .container{
+    width: 82%;
+    flex-direction: column;
+    padding: 0;
+    color: white;
+    text-align: center;
+  }
+  .container div h1{
+    font-size: 1.55rem;
+  }
+  .container div {
+    width: 100%;
+  }
+  .contents{
+    flex-direction: column;
+  }
+  .wa-seguranca img{
+    width: 80%;
+  }
+  .wa-business img{
+    width: 80%;
+  }
+  .contents h2{
+    font-size: 1.6rem
+  }
+  .contents p{
+    padding: 0 30px;
+    line-height: 1.75;
+    font-size: 1rem;
+  }
+  .obs {
+    display: none;
+  }
+  .link {
+    display: none;
+  }
+
 }
