@@ -116,6 +116,9 @@ header {
 .phone-img {
   width: 300px;
 }
+.phone-img-sm {
+  display: none;
+}
 
 .contents {
   display: flex;
@@ -297,6 +300,9 @@ footer {
 
 
 @media (max-width: 770px) {
+  nav {
+    position: static;
+  }
   .navbar {
     width: 100%;
   }
@@ -305,21 +311,34 @@ footer {
   }
   .logo-md {
     display: inline;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logo-md img {
+    width: 79.135px;
   }
   .menu {
     display: block;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 28px;
   }
-  .menu img{
-    width: 30px;
+  .menu img {
+    width: 27px;
   }
   .nav-items {
     display: none;
   }
+
   header{
+    padding-top: 60px;
     background-color: #128c7e;
   }
   .container{
-    width: 82%;
+    width: 85%;
     flex-direction: column;
     padding: 0;
     color: white;
@@ -330,9 +349,25 @@ footer {
   }
   .container div {
     width: 100%;
+    align-self: center;
+  }
+  .container p {
+    margin-top: 25px;
+    font-size: 1rem;
+  }
+  .title {
+    margin: 0 auto;
   }
   .btn {
+    margin: 10px 0;
     display: inline-block;
+  }
+  .phone-img {
+    display: none;
+  }
+  .phone-img-sm {
+    width: 300px;
+    display: block;
   }
 
   .contents{
